@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ==reset== -->
+    <link rel="stylesheet" href="../HomePage/reset.css" />
+    <!-- ==font Poppins=== -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- == link fontawesome== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- css style== -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ==============header start==================-->
+    <header class="header">
+      <!-- ==========top========== -->
+      <div class="top">
+        <p class="desc">
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </p>
+        <a href="" class="shop_now desc">ShopNow</a>
+      </div>
+
+      <!-- ==========nav============== -->
+      <div class="main_content">
+        <nav class="nav">
+          <p class="logo desc">Exclusive</p>
+          <ul class="list">
+            <li class="item desc"><a href="../HomePage/index.html">Home</a></li>
+            <li class="item desc"><a href="">Contact</a></li>
+            <li class="item desc"><a href="">About</a></li>
+            <li class="item desc">
+              <a href="../sign_up/index.htm">Sign Up</a>
+            </li>
+          </ul>
+          <div class="right">
+            <div class="search">
+              <input
+                type="text"
+                class="input desc"
+                placeholder="What are you looking for?"
+              /><button class="btn_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ==============header end==================-->
+
+    <!-- ==============main start================= -->
+    <main class="main">
+      <div class="main_content">
+        <!-- media start -->
+        <div class="main_content_sign_up">
+          <div class="media">
+            <img
+              src="../img/img_PNG/img_media_sign_up.png"
+              alt=""
+              class="img_media"
+            />
+          </div>
+          <!-- media end -->
+
+          <!-- sign up start -->
+          <div class="sign_up">
+            <p class="desc title">Create an account</p>
+            <p class="desc">Enter your details below</p>
+
+            <form id="form_sign_up" action="">
+              <div class="box">
+                <input id="user_name" type="text" placeholder="Name"  autocomplete="off"/>
+                <label class="desc error user_name_error"
+                  >Name không được để trống</label
+                >
+              </div>
+              <div class="box">
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email or Phone Number"
+                />
+                <label class="desc error email_error"
+                  >Email không được để trống</label
+                >
+              </div>
+              <div class="box">
+                <input id="password" type="password" placeholder="Password"  autocomplete="off"/>
+                <label class="desc error password_error"
+                  >Password không được để trống</label
+                >
+                <div class="icon icon_password">
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-eye-slash"></i>
+                </div>
+              </div>
+              <div class="box">
+                <input
+                  id="repassword"
+                  type="password"
+                  autocomplete="off"
+                  placeholder="Re-enter Password"
+                />
+                <label class="desc error repassword_error">
+                  Re-password không được để trống
+                </label>
+                <div class="icon icon_repassword">
+                  <i class="fa-solid fa-eye"></i>
+                  <i class="fa-solid fa-eye-slash"></i>
+                </div>
+              </div>
+              <button type="submit" class="desc">Create Account</button>
+              <button class="google">
+                <img
+                  src="../img/img_PNG/logo_google_sign_up.svg"
+                  alt=""
+                  class="logo_google"
+                />
+                <p class="desc">Sign up with Google</p>
+              </button>
+            </form>
+            <p class="desc">
+              Already have account?<a
+                href="../LogIn/index.html"
+                class="log_in desc"
+                >Log In</a
+              >
+            </p>
+          </div>
+        </div>
+        <!-- sign up end -->
+      </div>
+    </main>
+
+    <!-- =======footer========= -->
+    <footer class="footer">
+      <div class="main_content">
+        <div class="content">
+          <div class="item item1">
+            <p class="desc logo">Exclusive</p>
+            <p class="desc title">Subscribe</p>
+            <p class="desc">Get 10% off your first order</p>
+            <div class="email">
+              <input
+                type="email"
+                class="input"
+                placeholder="Enter your email"
+              />
+              <div class="icon"><i class="fa-regular fa-paper-plane"></i></div>
+            </div>
+          </div>
+          <div class="item item2">
+            <p class="desc title">Support</p>
+            <pre class="desc">
+111 Bijoy sarani, Dhaka,
+DH 1515, Bangladesh.</pre
+            >
+            <p class="desc">exclusive@gmail.com</p>
+            <p class="desc">+88015-88888-9999</p>
+          </div>
+          <div class="item item3">
+            <p class="desc title">Account</p>
+            <p class="desc">My Account</p>
+            <p class="desc">Login / Register</p>
+            <p class="desc">Cart</p>
+            <p class="desc">Wishlist</p>
+            <p class="desc">Shop</p>
+          </div>
+          <div class="item item4">
+            <p class="desc title">Quick Link</p>
+            <p class="desc">Privacy Policy</p>
+            <p class="desc">Terms Of Use</p>
+            <p class="desc">FAQ</p>
+            <p class="desc">Contact</p>
+          </div>
+          <div class="item item5">
+            <p class="desc title">Download App</p>
+            <p class="desc desc5">Save $3 with App New User Only</p>
+            <div class="app">
+              <div class="qr">
+                <img src="../img/img_PNG/Qrcode 1.svg" alt="" />
+              </div>
+              <div class="stores">
+                <img src="../img/img_PNG/GooglePlay.svg" alt="" class="store" />
+                <img src="../img/img_PNG/AppStore.svg" alt="" class="store" />
+              </div>
+            </div>
+            <div class="network">
+              <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+              <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="./main.js"></script>
+    <!-- ==============main end================= -->
+  </body>
+</html>
