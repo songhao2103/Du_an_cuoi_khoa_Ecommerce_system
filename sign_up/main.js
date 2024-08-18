@@ -82,6 +82,7 @@ formSignUp.addEventListener("submit", function (e) {
     errorRepassword.innerHTML = "Mật khẩu không khớp, thử lại";
     errorRepassword.style.display = "block";
   }
+ 
 
   if (
     userName.value &&
@@ -94,6 +95,7 @@ formSignUp.addEventListener("submit", function (e) {
   ) {
     // lấy dữ liệu từ form gộp thành đối tượng user
     const user = {
+      id: Math.floor(Math.random() * 100000000),
       userName: userName.value,
       email: email.value,
       password: password.value,
@@ -109,3 +111,4 @@ formSignUp.addEventListener("submit", function (e) {
     window.location.href = "../LogIn/index.html";
   }
 });
+

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ==reset== -->
+    <link rel="stylesheet" href="../HomePage/reset.css" />
+    <!-- ==font Poppins=== -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- == link fontawesome== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- css style== -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- ==========top========== -->
+      <div class="top">
+        <p class="desc">
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </p>
+        <a href="" class="shop_now desc">ShopNow</a>
+      </div>
+
+      <!-- ==========nav============== -->
+      <div class="main_content">
+        <nav class="nav">
+          <p class="logo desc">Exclusive</p>
+          <ul class="list">
+            <li class="item desc"><a href="../loggedIn/index.html">Home</a></li>
+            <li class="item desc"><a href="">Contact</a></li>
+            <li class="item desc"><a href="">About</a></li>
+            <li class="item desc">
+              <a href="../sign_up/index.htm">Sign Up</a>
+            </li>
+          </ul>
+          <div class="right">
+            <div class="search">
+              <input
+                type="text"
+                class="input desc"
+                placeholder="What are you looking for?"
+              /><button class="btn_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div
+              id="account_user"
+              class="account_user"
+              style="background-color: #db4444; color: #fff"
+            >
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <ul id="options_acc" class="options_acc">
+              <li class="item item1">
+                <div class="icon"><i class="fa-regular fa-user"></i></div>
+                <a class="desc">Manage My Account</a>
+              </li>
+              <li class="item item2">
+                <div class="icon">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <a class="desc">My Order</a>
+              </li>
+              <li class="item item3">
+                <div class="icon">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <a class="desc">My Cancellations</a>
+              </li>
+              <li class="item item4">
+                <div class="icon"><i class="fa-regular fa-star"></i></div>
+                <a class="desc">My Reviews</a>
+              </li>
+              <li class="item item5">
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <a href="../LogIn/index.html" class="desc">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ==============main start=========== -->
+    <main class="main">
+      <div class="main_content">
+        <!-- ==========top_main============ -->
+        <div class="top_main">
+          <div class="left">
+            <a href="../loggedIn/index.html" class="home desc">
+              <pre>Home   /</pre>
+            </a>
+            <p class="desc">My Account</p>
+          </div>
+          <p class="desc right">Welcome <span class="desc">Md Rimel</span></p>
+        </div>
+        <!-- =====contents -->
+        <div class="content">
+          <section class="menu_options">
+            <ul class="list_options">
+              <li class="desc title_option">Manage My Account</li>
+              <ul>
+                <li id="my_profile_option" class="desc option">My Profile</li>
+                <li class="desc option">Address Book</li>
+                <li class="desc option">My Payment Options</li>
+              </ul>
+            </ul>
+            <ul class="list_options">
+              <li class="desc title_option">My Orders</li>
+              <ul>
+                <li class="desc option">My Returns</li>
+                <li class="desc option">My Cancellations</li>
+              </ul>
+            </ul>
+            <ul class="list_options">
+              <li class="desc title_option">My WishList</li>
+            </ul>
+          </section>
+          <!-- ======my profile===== -->
+          <div class="my_profile">
+            <p class="desc title">Edit Your Profile</p>
+            <form action="">
+              <div class="input_group">
+                <div class="input">
+                  <label for="first_name" class="desc">First Name</label
+                  ><br /><input type="text" placeholder="Md" id="first_name" />
+                </div>
+                <div class="input">
+                  <label for="last_name" class="desc">Last Name</label
+                  ><br /><input
+                    type="text"
+                    placeholder="Rimel"
+                    id="last_name"
+                  />
+                </div>
+              </div>
+              <div class="input_group">
+                <div class="input">
+                  <label for="email" class="desc">Email</label><br /><input
+                    type="text"
+                    placeholder="rimel1111@gmail.com"
+                    id="email"
+                  />
+                </div>
+                <div class="input">
+                  <label for="address" class="desc">Address</label><br /><input
+                    type="text"
+                    placeholder="Kingston, 5236, United State"
+                    id="address"
+                  />
+                </div>
+              </div>
+              <div class="input input_password">
+                <label for="currernt_password" class="desc"
+                  >Password Changes</label
+                >
+                <br /><input
+                  type="text"
+                  placeholder="Current Password"
+                  id="currernt_password"
+                />
+                <br />
+                <input type="text" placeholder="New Password" />
+                <br /><input type="text" placeholder="Confirm New Password" />
+              </div>
+              <div class="button">
+                <p class="desc">Cancel</p>
+                <button class="desc btn">Save Changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- =============main end============= -->
+    <!-- ======JS=========== -->
+    <script src="./main.js"></script>
+  </body>
+</html>

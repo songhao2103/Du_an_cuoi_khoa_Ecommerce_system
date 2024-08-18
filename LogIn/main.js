@@ -36,7 +36,6 @@ formLogIn.addEventListener("submit", function (e) {
   const usersLocal = JSON.parse(localStorage.getItem("usersLocal")) || [];
   // tìm kiếm và kiểm tra dữ liệu người dùng nhập vào so với dữ liệu từ localstorage
   // hàm find() sẽ trả về giá trị duy nhất thỏa mãn được tìm thấy trong mảng
-  console.log(usersLocal);
 
   const findUser = usersLocal.find(
     (user) =>
@@ -48,7 +47,16 @@ formLogIn.addEventListener("submit", function (e) {
     if (!findUser) {
       alertError.style.display = "block";
     } else {
-      window.location.href = "../HomePage/index.html";
+      const userLoggedInLocal = {
+        id: findUser.id,
+        email: findUser.email,
+        password: findUser.password,
+      };
+      localStorage.setItem(
+        "userLoggedInLocal",
+        JSON.stringify(userLoggedInLocal)
+      );
+      window.location.href = "../loggedIn/index.html";
     }
   }
 });
