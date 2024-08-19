@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ==reset== -->
+    <link rel="stylesheet" href="../HomePage/reset.css" />
+    <!-- ==font Poppins=== -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- == link fontawesome== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- css style== -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ==================header============ -->
+    <header class="header">
+      <!-- ==========top========== -->
+      <div class="top">
+        <p class="desc">
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </p>
+        <a href="" class="shop_now desc">ShopNow</a>
+      </div>
+
+      <!-- ==========nav============== -->
+      <div class="main_content">
+        <nav class="nav">
+          <p class="logo desc">Exclusive</p>
+          <ul class="list">
+            <li class="item desc"><a href="../loggedIn/index.html">Home</a></li>
+            <li class="item desc"><a href="">Contact</a></li>
+            <li class="item desc"><a href="">About</a></li>
+            <li class="item desc">
+              <a href="../sign_up/index.htm">Sign Up</a>
+            </li>
+          </ul>
+          <div class="right">
+            <div class="search">
+              <input
+                type="text"
+                class="input desc"
+                placeholder="What are you looking for?"
+              /><button class="btn_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+            <a href="../Cart/index.html" class="cart"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <div id="account_user" class="account_user">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <ul id="options_acc" class="options_acc">
+              <li class="item item1">
+                <div class="icon"><i class="fa-regular fa-user"></i></div>
+                <a href="../Account/index.html" class="desc"
+                  >Manage My Account</a
+                >
+              </li>
+              <li class="item item2">
+                <div class="icon">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <a class="desc">My Order</a>
+              </li>
+              <li class="item item3">
+                <div class="icon">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <a class="desc">My Cancellations</a>
+              </li>
+              <li class="item item4">
+                <div class="icon"><i class="fa-regular fa-star"></i></div>
+                <a class="desc">My Reviews</a>
+              </li>
+              <li class="item item5">
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <a href="../LogIn/index.html" class="desc">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ===========main=========== -->
+    <main class="main">
+      <div class="main_content">
+        <div class="content">
+          <div class="top_main">
+            <pre class="desc">Home  /</pre>
+            <p class="desc">Cart</p>
+          </div>
+
+          <div class="wallet">
+            <div class="bar">
+              <div class="key item1">
+                <p class="desc">Products</p>
+              </div>
+              <div class="key item2">
+                <p class="desc">Price</p>
+              </div>
+              <div class="key item3">
+                <p class="desc">Quantity</p>
+              </div>
+              <div class="key item4">
+                <p class="desc">Subtobal</p>
+              </div>
+              <div class="key item5"></div>
+            </div>
+            <div id="list_products" class="list_products">
+              <!-- product_1 -->
+              <!-- <div class="product" id="product_1">
+                <div class="info">
+                  <div class="image_product">
+                    <img src="../img/img_products/g92-2-500x500 1.png" alt="" />
+                  </div>
+                  <p class="desc name">HAVIT HV-G92 Gamepad</p>
+                </div>
+                <p class="item desc price">$120</p>
+                <div class="item">
+                  <div class="quantity">
+                    <p class="desc">01</p>
+                    <div class="icon">
+                      <div class="up"><i class="fa-solid fa-angle-up"></i></div>
+                      <div class="down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="item desc subtobal"></p>
+                <div class="icon_clear">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div> -->
+              <!-- product_2 -->
+              <!-- <div class="product" id="product_2">
+                <div class="info">
+                  <div class="image_product">
+                    <img
+                      src="../img/img_products/ak-900-01-500x500 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="desc name">AK-900 Wired Keyboard</p>
+                </div>
+                <p class="item desc price">$960</p>
+                <div class="item">
+                  <div class="quantity">
+                    <p class="desc">01</p>
+                    <div class="icon">
+                      <div class="up"><i class="fa-solid fa-angle-up"></i></div>
+                      <div class="down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="item desc subtobal"></p>
+                <div class="icon_clear">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div> -->
+              <!-- product_3 -->
+              <!-- <div class="product" id="product_3">
+                <div class="info">
+                  <div class="image_product">
+                    <img
+                      src="../img/img_products/g27cq4-500x500 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="desc name">IPS LCD Gaming Monitor</p>
+                </div>
+                <p class="item desc price">$370</p>
+                <div class="item">
+                  <div class="quantity">
+                    <p class="desc">01</p>
+                    <div class="icon">
+                      <div class="up"><i class="fa-solid fa-angle-up"></i></div>
+                      <div class="down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="item desc subtobal"></p>
+                <div class="icon_clear">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div> -->
+              <!-- product_4 -->
+              <!-- <div class="product" id="product_4">
+                <div class="info">
+                  <div class="image_product">
+                    <img
+                      src="../img/img_products/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png"
+                      alt=""
+                      class="image_product"
+                    />
+                  </div>
+                  <p class="desc name">S-Series Comfort Chair</p>
+                </div>
+                <p class="item desc price">$375</p>
+                <div class="item">
+                  <div class="quantity">
+                    <p class="desc">01</p>
+                    <div class="icon">
+                      <div class="up"><i class="fa-solid fa-angle-up"></i></div>
+                      <div class="down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="item desc subtobal"></p>
+                <div class="icon_clear">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div> -->
+              <!-- product_5 -->
+              <!-- <div class="product" id="product_5">
+                <div class="info">
+                  <div class="image_product">
+                    <img
+                      src="../img/img_products/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="desc name">The north coat</p>
+                </div>
+                <p class="item desc price">$260</p>
+                <div class="item">
+                  <div class="quantity">
+                    <p class="desc">01</p>
+                    <div class="icon">
+                      <div class="up"><i class="fa-solid fa-angle-up"></i></div>
+                      <div class="down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="item desc subtobal"></p>
+                <div class="icon_clear">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div> -->
+              <!-- product_6 -->
+              <!-- <div class="product" id="product_6">
+                <div class="info">
+                  <div class="image_product">
+                    <img
+                      src="../img/img_products/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="desc name">Gucci duffle bag</p>
+                </div>
+                <p class="item desc price">$960</p>
+                <div class="item">
+                  <div class="quantity">
+                    <p class="desc">01</p>
+                    <div class="icon">
+                      <div class="up"><i class="fa-solid fa-angle-up"></i></div>
+                      <div class="down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="item desc subtobal"></p>
+                <div class="icon_clear">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div> -->
+              <!-- product_7 -->
+              <!-- <div class="product" id="product_7">
+                <div class="info">
+                  <div class="image_product">
+                    <img
+                      src="../img/img_products/gammaxx-l240-argb-1-500x500 1.png"
+                      alt=""
+                      class="image_product"
+                    />
+                  </div>
+                  <p class="desc name">RGB liquid CPU Cooler</p>
+                </div>
+                <p class="item desc price">$160</p>
+                <div class="item">
+                  <div class="quantity">
+                    <p class="desc">01</p>
+                    <div class="icon">
+                      <div class="up"><i class="fa-solid fa-angle-up"></i></div>
+                      <div class="down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="item desc subtobal"></p>
+                <div class="icon_clear">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div> -->
+              <!-- product_8 -->
+              <!-- <div class="product" id="product_8">
+                <div class="info">
+                  <div class="image_product">
+                    <img
+                      src="../img/img_products/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <p class="desc name">Small BookSelf</p>
+                </div>
+                <p class="item desc price">$210</p>
+                <div class="item">
+                  <div class="quantity">
+                    <p class="desc">01</p>
+                    <div class="icon">
+                      <div class="up"><i class="fa-solid fa-angle-up"></i></div>
+                      <div class="down">
+                        <i class="fa-solid fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="item desc subtobal"></p>
+                <div class="icon_clear">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </div> -->
+            </div>
+            <div class="bot_wallet">
+              <a href="../loggedIn/index.html" class="btn desc"
+                >Return To Shop</a
+              >
+              <a href="../loggedIn/main.js" class="btn desc">Update Cart</a>
+            </div>
+          </div>
+
+          <div class="bot_main">
+            <div class="coupon">
+              <input type="text" placeholder="Coupon Code" />
+              <div class="btn desc">Apply Coupon</div>
+            </div>
+            <div class="checkout">
+              <p class="title desc">Cart Total</p>
+              <div class="item">
+                <p class="desc">Subtotal</p>
+                <p class="desc">$<span class="total_amount">0</span></p>
+              </div>
+              <div class="item">
+                <p class="desc">Shipping</p>
+                <p class="desc">Free</p>
+              </div>
+              <div class="item">
+                <p class="desc">Total</p>
+                <p class="desc">$<span class="total_amount">0</span></p>
+              </div>
+              <button class="btn desc">Procees to checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===================footer============= -->
+    <footer class="footer">
+      <div class="main_content">
+        <div class="content">
+          <div class="item item1">
+            <p class="desc logo">Exclusive</p>
+            <p class="desc title">Subscribe</p>
+            <p class="desc">Get 10% off your first order</p>
+            <div class="email">
+              <input
+                type="email"
+                class="input"
+                placeholder="Enter your email"
+              />
+              <div class="icon"><i class="fa-regular fa-paper-plane"></i></div>
+            </div>
+          </div>
+          <div class="item item2">
+            <p class="desc title">Support</p>
+            <pre class="desc">
+111 Bijoy sarani, Dhaka,
+DH 1515, Bangladesh.</pre
+            >
+            <p class="desc">exclusive@gmail.com</p>
+            <p class="desc">+88015-88888-9999</p>
+          </div>
+          <div class="item item3">
+            <p class="desc title">Account</p>
+            <p class="desc">My Account</p>
+            <p class="desc">Login / Register</p>
+            <p class="desc">Cart</p>
+            <p class="desc">Wishlist</p>
+            <p class="desc">Shop</p>
+          </div>
+          <div class="item item4">
+            <p class="desc title">Quick Link</p>
+            <p class="desc">Privacy Policy</p>
+            <p class="desc">Terms Of Use</p>
+            <p class="desc">FAQ</p>
+            <p class="desc">Contact</p>
+          </div>
+          <div class="item item5">
+            <p class="desc title">Download App</p>
+            <p class="desc desc5">Save $3 with App New User Only</p>
+            <div class="app">
+              <div class="qr">
+                <img src="../img/img_PNG/Qrcode 1.svg" alt="" />
+              </div>
+              <div class="stores">
+                <img src="../img/img_PNG/GooglePlay.svg" alt="" class="store" />
+                <img src="../img/img_PNG/AppStore.svg" alt="" class="store" />
+              </div>
+            </div>
+            <div class="network">
+              <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+              <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+              <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==============JS============= -->
+    <script src="./main.js"></script>
+  </body>
+</html>

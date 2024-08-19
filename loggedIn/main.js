@@ -1,7 +1,6 @@
 // thêm class active và account user
 const accountUser = document.getElementById("account_user");
 const optionsAcc = document.getElementById("options_acc");
-console.log(accountUser);
 accountUser.addEventListener("click", function () {
   accountUser.classList.toggle("active");
   if (accountUser.classList.contains("active")) {
@@ -271,3 +270,52 @@ function exActive(value11, value12, value21, value22) {
   value22.classList.remove("active");
   value21.classList.add("active");
 }
+
+// làm chức năng thêm vào giỏ hàng
+// lấy dữ liệu danh sách sản phẩm lên localStorage
+// const listProductsLocal = JSON.parse(localStorage.getItem("listProducts"));
+const listClassAdd = document.querySelectorAll(".add");
+// lấy xuống dữ liệu danh sách các sản phẩm đã được thêm vào giỏ hàng
+const listProductsCartLocal =
+  JSON.parse(localStorage.getItem("listProductsCart")) || [];
+// console.log(listClassAdd);
+listClassAdd.forEach((element) => {
+  element.addEventListener("click", function () {
+    // lấy ra các thông tin của sản phẩm
+    const idProduct = element.id.slice(4);
+    const productName = document.querySelector(`#${idProduct} .name`).innerHTML;
+    const productImg = document.querySelector(`#${idProduct} .product_img`).src;
+    const productPrice = document.querySelector(
+      `#${idProduct} .price .after span`
+    ).innerHTML;
+
+    // Tạo đối tượng sản phẩm
+    const productCart = {
+      id: idProduct,
+      name: productName,
+      img: productImg,
+      price: productPrice,
+      quantity: 1,
+    };
+    let count = 0;
+    for (let i = 0; i < listProductsCartLocal.length; i++) {
+      if (listProductsCartLocal[i].id === productCart.id) {
+        listProductsCartLocal[i].quantity++;
+        count++;
+        localStorage.setItem(
+          "listProductsCart",
+          JSON.stringify(listProductsCartLocal)
+        );
+        break;
+      }
+    }
+    if (count === 0) {
+      listProductsCartLocal.push(productCart);
+      localStorage.setItem(
+        "listProductsCart",
+        JSON.stringify(listProductsCartLocal)
+      );
+    }
+    // đẩy thông tin sản phẩm lên localstorage
+  });
+});
