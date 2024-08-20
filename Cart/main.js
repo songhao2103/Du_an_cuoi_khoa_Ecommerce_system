@@ -15,12 +15,20 @@ accountUser.addEventListener("click", function () {
 });
 
 // Lấy dữ liệu từ local xuống
+// lấy thông tin tài khoản hiện tại đang đăng nhập trên local xuống
+const accountLoggedIn = JSON.parse(localStorage.getItem("userLoggedInLocal"));
+const nameCartLocal = "listProductsCart" + accountLoggedIn.id;
+console.log(nameCartLocal);
+
 const listProductsCartLocal =
-  JSON.parse(localStorage.getItem("listProductsCart")) || [];
+  JSON.parse(localStorage.getItem(nameCartLocal)) || [];
 
 // lấy ra các elements
 const listProductElement = document.getElementById("list_products");
 const subtobalElement = document.querySelector(".subtobal");
+// lấy email tài khoản đang đăng nhập thêm vao trang
+const nameAccountLoggedIn = document.getElementById("acccount_logged_in");
+nameAccountLoggedIn.innerHTML = accountLoggedIn.email;
 
 //
 for (let i = 0; i < listProductsCartLocal.length; i++) {
@@ -96,7 +104,7 @@ function clearProduct() {
           listProductsCartLocal.splice(j, 1);
           // cập nhật mảng các product cart sau khi xóa lên local
           localStorage.setItem(
-            "listProductsCart",
+            nameCartLocal,
             JSON.stringify(listProductsCartLocal)
           );
           break;
@@ -132,7 +140,7 @@ function changeQuantity(value, arr) {
             prd.quantity++;
             // cập nhật lại dữ liệu lên local
             localStorage.setItem(
-              "listProductsCart",
+              nameCartLocal,
               JSON.stringify(listProductsCartLocal)
             );
             // cập nhật lại số lượng trên giao diện
@@ -163,7 +171,7 @@ function changeQuantity(value, arr) {
               prd.quantity--;
               // cập nhật lại dữ liệu lên local
               localStorage.setItem(
-                "listProductsCart",
+                nameCartLocal,
                 JSON.stringify(listProductsCartLocal)
               );
 

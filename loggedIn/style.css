@@ -356,11 +356,38 @@ button {
   font-size: 18px;
   cursor: pointer;
 }
+
+.header .nav .right .media_cart {
+  display: flex;
+  position: relative;
+}
+
+.header .nav .right .quantity_products_cart {
+  position: absolute;
+  top: -12px;
+  right: -5px;
+  background-color: var(--secondary_1);
+  width: 17px;
+  height: 17px;
+  font-size: 1.2rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+}
+
 .header .nav .right .cart {
   cursor: pointer;
 }
+
 .header .nav .right .cart i {
-  font-size: 18px;
+  font-size: 22px;
+  color: rgb(73, 73, 73);
+}
+.header .nav .right .cart:hover i {
+  color: var(--secondary_1);
 }
 .header .nav .right .account_user {
   width: 32px;
@@ -370,6 +397,7 @@ button {
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .header .nav .right .account_user:hover {
