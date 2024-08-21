@@ -123,7 +123,15 @@
             <ul class="list_options">
               <li class="desc title_option">Manage My Account</li>
               <ul>
-                <li id="my_profile_option" class="desc option">My Profile</li>
+                <li id="option_my_profile" class="desc option my_option active">
+                  My Profile
+                </li>
+                <li id="option_profile_update" class="desc option my_option">
+                  Profile Update
+                </li>
+                <li id="option_password_changes" class="desc option my_option">
+                  Password Changes
+                </li>
                 <li class="desc option">Address Book</li>
                 <li class="desc option">My Payment Options</li>
               </ul>
@@ -140,55 +148,99 @@
             </ul>
           </section>
           <!-- ======my profile===== -->
-          <div class="my_profile">
-            <p class="desc title">Edit Your Profile</p>
-            <form action="">
-              <div class="input_group">
-                <div class="input">
-                  <label for="first_name" class="desc">First Name</label
-                  ><br /><input type="text" placeholder="Md" id="first_name" />
-                </div>
-                <div class="input">
-                  <label for="last_name" class="desc">Last Name</label
-                  ><br /><input
-                    type="text"
-                    placeholder="Rimel"
-                    id="last_name"
-                  />
-                </div>
-              </div>
-              <div class="input_group">
-                <div class="input">
-                  <label for="email" class="desc">Email</label><br /><input
-                    type="text"
-                    placeholder="rimel1111@gmail.com"
-                    id="email"
-                  />
-                </div>
-                <div class="input">
-                  <label for="address" class="desc">Address</label><br /><input
-                    type="text"
-                    placeholder="Kingston, 5236, United State"
-                    id="address"
-                  />
-                </div>
-              </div>
-              <div class="input input_password">
-                <label for="currernt_password" class="desc"
-                  >Password Changes</label
-                >
-                <br /><input
+          <div id="my_profile" class="my_profile media_option">
+            <p class="title desc section">My Profile</p>
+            <div class="box box_name">
+              <p class="desc">Name:</p>
+              <p id="my_name" class="my_name desc">Phan Song Hào</p>
+            </div>
+            <div class="box box_email">
+              <p class="desc">Email:</p>
+              <p id="my_email" class="my_email desc">hao@gmail.com</p>
+            </div>
+            <div class="box box_id">
+              <p class="desc">ID:</p>
+              <p id="my_id" class="my_id desc">1237658712</p>
+            </div>
+            <div class="box box_address">
+              <p class="desc">Address:</p>
+              <p id="my_address" class="my_address desc">Nam Từ Liêm, Hà Nội</p>
+            </div>
+          </div>
+          <!-- =========profile update========== -->
+          <div id="profile_update" class="profile_update media_option">
+            <p class="desc title section">Profile Update</p>
+            <form id="form_profile_update" action="">
+              <div class="box">
+                <label for="" class="desc">Name:</label
+                ><input
+                  id="name_update"
                   type="text"
-                  placeholder="Current Password"
-                  id="currernt_password"
+                  placeholder="Enter your new name"
                 />
-                <br />
-                <input type="text" placeholder="New Password" />
-                <br /><input type="text" placeholder="Confirm New Password" />
               </div>
-              <div class="button">
-                <p class="desc">Cancel</p>
-                <button class="desc btn">Save Changes</button>
+              <div class="box">
+                <label for="" class="desc">Email:</label
+                ><input
+                  id="email_update"
+                  type="text"
+                  placeholder="Enter your new email"
+                />
+                <label for="" class="error" id="error_email"
+                  >Email này đã tồn tại, nếu đó là email cũ của bạn thì để trống
+                  phần này</label
+                >
+              </div>
+              <div class="box">
+                <label for="" class="desc">Address:</label
+                ><input
+                  id="address_update"
+                  type="text"
+                  placeholder="Enter your address"
+                />
+              </div>
+              <div class="box box_password">
+                <label for="" class="desc">Password:</label
+                ><input
+                  id="password_update"
+                  type="password"
+                  placeholder="Enter your password"
+                />
+                <label for="" class="error" id="error_password"
+                  >Mật khẩu không được để trống</label
+                >
+                <div class="hidden_password">
+                  <div id="box_eye_update" class="box_icon">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="slash_eye_update" class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="box_btn">
+                <button class="btn">Cancel</button>
+                <button type="submit" class="btn">Update</button>
+              </div>
+            </form>
+          </div>
+          <!--=============== password changes================= -->
+          <div id="password_changes" class="password_changes media_option">
+            <p class="title desc section">Password Changes</p>
+            <form action="">
+              <div class="box">
+                <label for="" class="desc">Old password</label
+                ><input type="text" placeholder="Enter old password" />
+              </div>
+              <div class="box">
+                <label for="" class="desc">New password</label
+                ><input type="text" placeholder="Enter new password" />
+              </div>
+              <div class="box">
+                <label for="" class="desc">Re-new password</label
+                ><input type="text" placeholder="Re-enter new password" />
+              </div>
+              <div class="box_btn">
+                <button class="btn">Cancel</button>
+                <button class="btn">Changes</button>
               </div>
             </form>
           </div>

@@ -51,6 +51,7 @@ formLogIn.addEventListener("submit", function (e) {
         id: findUser.id,
         email: findUser.email,
         password: findUser.password,
+        name: findUser.userName,
       };
       localStorage.setItem(
         "userLoggedInLocal",

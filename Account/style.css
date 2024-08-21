@@ -51,6 +51,24 @@ button {
 input {
   border: none;
 }
+/* ===========CSS chung khối section */
+.section.desc {
+  color: var(--secondary_1, #db4444);
+  font-weight: 600;
+  line-height: 1.25; /* 125% */
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 16px;
+}
+
+.section.desc::before {
+  content: "";
+  width: 20px;
+  height: 40px;
+  background-color: var(--secondary_1);
+  border-radius: 5px;
+}
 /* =============code chung cho khối btn========== */
 .btn {
   padding: 16px 48px;
@@ -255,55 +273,155 @@ input {
   display: flex;
   justify-content: space-between;
 }
+
+.main .content .menu_options {
+  border-right: 2px solid rgb(192, 192, 192);
+  padding-right: 30px;
+}
+
 .main .content .menu_options .list_options .title_option {
   font-weight: 500;
 }
 .main .content .menu_options .list_options .option {
   opacity: 0.5;
   margin-top: 10px;
+  cursor: pointer;
 }
 .main .content .menu_options .list_options ul {
   margin: 10px 0px 25px 40px;
 }
-#my_profile_option {
+#option_my_profile.active {
   color: var(--secondary_1);
   opacity: 1;
 }
 
-/* ================my profile=============== */
-
-.main .content .my_profile {
-  width: 870px;
-  padding: 40px 80px;
-  /* background-color: pink; */
-}
-.main .content .my_profile .title {
+#option_profile_update.active {
   color: var(--secondary_1);
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 16px;
+  opacity: 1;
 }
-.main .content .my_profile .input_group {
+#option_password_changes.active {
+  color: var(--secondary_1);
+  opacity: 1;
+}
+
+/* ========my profile========= */
+
+.main .my_profile {
+  border: 2px solid rgb(184, 184, 184);
+  padding: 40px 20px;
+  border-radius: 10px;
+  /* display: none; */
+}
+.main .my_profile .title {
+  margin-bottom: 30px;
+}
+.main .my_profile .box {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-.main .content .my_profile input {
+  gap: 10px;
+  width: 850px;
   padding: 10px;
-  margin-bottom: 16px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  margin-bottom: 20px;
 }
-.main .content .my_profile .input_group .input {
-  width: 330px;
-}
-.main .content .my_profile .button {
-  display: flex;
-  gap: 32px;
-  align-items: center;
-  justify-content: end;
-  margin-top: 20px;
-}
-.main .content .my_profile .button .desc:hover {
+
+.main .my_profile .box .desc:first-child {
   font-weight: 600;
+}
+
+/* ========profile update============ */
+.main .profile_update {
+  width: 894px;
+  display: none;
+  border: 2px solid rgb(184, 184, 184);
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.main .profile_update .title {
+  margin-bottom: 30px;
+}
+
+.main .profile_update .box {
+  padding: 15px;
+  /* background-color: rebeccapurple; */
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.main .profile_update .box .error {
+  color: red;
+  display: none;
+}
+
+.main .profile_update .box_password {
+  display: flex;
+  position: relative;
+}
+.main .profile_update .box .hidden_password {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+.main .profile_update .box .hidden_password .box_icon {
+  display: flex;
+  position: relative;
+}
+.main .profile_update .box .hidden_password .box_icon i {
+  position: absolute;
+  background-color: white;
   cursor: pointer;
 }
+.main .profile_update .box .hidden_password .box_icon i.active {
+  display: none;
+}
+.main .profile_update .box_btn {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  justify-content: end;
+}
+
+.main .profile_update .box_btn .btn:first-child {
+  background-color: var(--secondary_2);
+  color: #000;
+}
+
+/* ===========password changes ===========*/
+.main .password_changes {
+  width: 894px;
+  display: none;
+  border: 2px solid rgb(184, 184, 184);
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.main .password_changes .title {
+  margin-bottom: 30px;
+}
+
+.main .password_changes .box {
+  padding: 15px;
+  /* background-color: rebeccapurple; */
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+.main .password_changes .box_btn {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  justify-content: end;
+}
+
+.main .password_changes .box_btn .btn:first-child {
+  background-color: var(--secondary_2);
+  color: #000;
+}
+
 /* ====================main end===================== */
