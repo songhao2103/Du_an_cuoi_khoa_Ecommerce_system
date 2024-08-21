@@ -47,7 +47,7 @@ if (seeProduct) {
   console.log(name, img, id, price);
   // thêm vào html
   const addSeeProductHTML = document.createElement("div");
-  addSeeProductHTML.className = "product";
+  addSeeProductHTML.className = "product_see";
   addSeeProductHTML.innerHTML = `<div class="list_secondary_images">
             <img src="${img}" alt="" /><img
               src="${img}"
@@ -192,3 +192,34 @@ buyNowSeeElement.addEventListener("click", function () {
 });
 
 console.log(seeProduct);
+
+
+// làm chức năng xem thông tin sản phẩm
+// lấy các phần tử HTML
+const listImagesProduct = document.querySelectorAll(
+  ".cart_product .see_product"
+);
+console.log(listImagesProduct);
+
+listImagesProduct.forEach((element) => {
+  element.addEventListener("click", function () {
+    // lấy ra các thông tin của sản phẩm
+    const idProduct = element.id.slice(6);
+    const productName = document.querySelector(`#${idProduct} .name`).innerHTML;
+    const productImg = document.querySelector(`#${idProduct} .product_img`).src;
+    const productPrice = document.querySelector(
+      `#${idProduct} .price .after span`
+    ).innerHTML;
+
+    // Tạo đối tượng sản phẩm
+    const seeProduct = {
+      id: idProduct,
+      name: productName,
+      img: productImg,
+      price: productPrice,
+      quantity: 1,
+    };
+    // đẩy thông tin sản phẩm muốn xem trên local
+    localStorage.setItem("seeProductLocal", JSON.stringify(seeProduct));
+  });
+});
