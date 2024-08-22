@@ -410,6 +410,7 @@ input {
   flex-direction: column;
   gap: 10px;
   border-bottom: 1px solid rgb(185, 185, 185);
+  position: relative;
 }
 
 .main .password_changes .box_btn {
@@ -424,4 +425,27 @@ input {
   color: #000;
 }
 
+.main .password_changes .hidden_password {
+  position: absolute;
+  right: 12px;
+  bottom: 20px;
+}
+.main .password_changes .hidden_password .box_icon {
+  display: flex;
+  position: relative;
+  width: 30px;
+}
+
+.main .password_changes .box_icon .fa-solid {
+  background-color: white;
+  position: absolute;
+}
+.main .password_changes .box_icon .fa-solid.active {
+  display: none;
+}
+
+.main .password_changes .error_changes {
+  color: red;
+  display: none;
+}
 /* ====================main end===================== */

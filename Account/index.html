@@ -162,10 +162,6 @@
               <p class="desc">ID:</p>
               <p id="my_id" class="my_id desc">1237658712</p>
             </div>
-            <div class="box box_address">
-              <p class="desc">Address:</p>
-              <p id="my_address" class="my_address desc">Nam Từ Liêm, Hà Nội</p>
-            </div>
           </div>
           <!-- =========profile update========== -->
           <div id="profile_update" class="profile_update media_option">
@@ -190,14 +186,6 @@
                   >Email này đã tồn tại, nếu đó là email cũ của bạn thì để trống
                   phần này</label
                 >
-              </div>
-              <div class="box">
-                <label for="" class="desc">Address:</label
-                ><input
-                  id="address_update"
-                  type="text"
-                  placeholder="Enter your address"
-                />
               </div>
               <div class="box box_password">
                 <label for="" class="desc">Password:</label
@@ -225,22 +213,61 @@
           <!--=============== password changes================= -->
           <div id="password_changes" class="password_changes media_option">
             <p class="title desc section">Password Changes</p>
-            <form action="">
+            <form id="form_password_changes" action="">
               <div class="box">
                 <label for="" class="desc">Old password</label
-                ><input type="text" placeholder="Enter old password" />
+                ><input
+                  id="old_password"
+                  type="text"
+                  placeholder="Enter old password"
+                />
+                <div class="hidden_password">
+                  <div id="box_eye_old" class="box_icon">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="slash_eye_old" class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </div>
+                <p id="error_old_password" class="error_changes">
+                  
+                </p>
               </div>
               <div class="box">
                 <label for="" class="desc">New password</label
-                ><input type="text" placeholder="Enter new password" />
+                ><input
+                  id="new_password"
+                  type="text"
+                  placeholder="Enter new password"
+                />
+                <div class="hidden_password">
+                  <div id="box_eye_new" class="box_icon">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="slash_eye_new" class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </div>
+                <p id="error_new_password" class="error_changes">
+                  
+                </p>
               </div>
               <div class="box">
                 <label for="" class="desc">Re-new password</label
-                ><input type="text" placeholder="Re-enter new password" />
+                ><input
+                  id="re-new_password"
+                  type="text"
+                  placeholder="Re-enter new password"
+                />
+                <div class="hidden_password">
+                  <div id="box_eye_re-new" class="box_icon">
+                    <i class="fa-solid fa-eye"></i>
+                    <i id="slash_eye_re-new" class="fa-solid fa-eye-slash"></i>
+                  </div>
+                </div>
+                <p id="error_re-new_password" class="error_changes">
+                 
+                </p>
               </div>
               <div class="box_btn">
                 <button class="btn">Cancel</button>
-                <button class="btn">Changes</button>
+                <button type="submit" class="btn">Changes</button>
               </div>
             </form>
           </div>
