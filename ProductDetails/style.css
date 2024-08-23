@@ -311,7 +311,7 @@ button {
   display: flex;
   position: relative;
 }
-.header .nav .list .item:first-child a::after {
+/* .header .nav .list .item:first-child a::after {
   content: "";
   height: 1px;
   width: 100%;
@@ -319,7 +319,7 @@ button {
   opacity: 0.6;
   position: absolute;
   bottom: 0;
-}
+} */
 
 .header .nav .list .item a:hover {
   font-weight: 600;
@@ -437,6 +437,12 @@ button {
   transform: scale(1.05);
 }
 
+#acccount_logged_in {
+  color: white;
+  font-size: 20px;
+  margin-left: 32px;
+  margin-top: 10px;
+}
 /* =============main=============== */
 /* ==============top main=============== */
 .main .top_main {

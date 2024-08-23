@@ -55,6 +55,7 @@ formSignUp.addEventListener("submit", function (e) {
   }
 
   if (!email.value) {
+    errorEmail.innerHTML = "Email không được để trống";
     errorEmail.style.display = "block";
   } else if (findEmail) {
     errorEmail.innerHTML = "Email này đã được đăng ký";
@@ -64,6 +65,7 @@ formSignUp.addEventListener("submit", function (e) {
   }
 
   if (!password.value) {
+    errorPassword.innerHTML = "Password không được để trống";
     errorPassword.style.display = "block";
   } else if (password.value.length < 6) {
     errorPassword.innerHTML = "Độ dài mật khẩu không đủ, ít nhất 6 ký tự";
@@ -73,16 +75,17 @@ formSignUp.addEventListener("submit", function (e) {
   }
 
   if (!rePassword.value) {
+    errorRepassword.innerHTML = "Re-password không được để trống";
+    errorRepassword.style.display = "block";
+  } else if (
+    rePassword.value !== password.value &&
+    password.value.length >= 6
+  ) {
+    errorRepassword.innerHTML = "Mật khẩu không khớp, thử lại";
     errorRepassword.style.display = "block";
   } else {
     errorRepassword.style.display = "none";
   }
-
-  if (rePassword.value !== password.value && password.value.length >= 6) {
-    errorRepassword.innerHTML = "Mật khẩu không khớp, thử lại";
-    errorRepassword.style.display = "block";
-  }
- 
 
   if (
     userName.value &&
@@ -111,4 +114,3 @@ formSignUp.addEventListener("submit", function (e) {
     window.location.href = "../LogIn/index.html";
   }
 });
-

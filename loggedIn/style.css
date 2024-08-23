@@ -437,6 +437,12 @@ button {
   transform: scale(1.05);
 }
 
+#acccount_logged_in {
+  color: white;
+  font-size: 20px;
+  margin-left: 32px;
+  margin-top: 10px;
+}
 /* ==========main================*/
 /* ==========menu============== */
 /* ===========nav========== */

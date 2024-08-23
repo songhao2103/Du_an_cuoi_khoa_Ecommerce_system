@@ -28,6 +28,22 @@ boxEyeUpdateElement.addEventListener("click", function () {
   }
 });
 
+// // code cho phần hiển thị số sản phẩm đã thêm vào giỏ hàng
+// const listProductsCartLocal =
+//   JSON.parse(localStorage.getItem(nameCartLocal)) || [];
+
+// function displayQuantity() {
+//   const quantityProductsCart = document.getElementById(
+//     "quantity_products_cart"
+//   );
+//   if (listProductsCartLocal.length === 0) {
+//     quantityProductsCart.style.display = "none";
+//   } else {
+//     quantityProductsCart.innerHTML = listProductsCartLocal.length;
+//     quantityProductsCart.style.display = "block";
+//   }
+// }
+// displayQuantity();
 // =======================================================
 const listMyOptionsElement = document.querySelectorAll(".my_option");
 const listMediaOptionsElement = document.querySelectorAll(".media_option");

@@ -360,6 +360,7 @@ button {
 }
 .header .nav .right .cart i {
   font-size: 18px;
+  color: var(--text_color_1);
 }
 
 /* ==========main================*/

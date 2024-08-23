@@ -23,12 +23,14 @@ formLogIn.addEventListener("submit", function (e) {
 
   if (!emailLogIn.value) {
     errorEmail.style.display = "block";
+    alertError.style.display = "none";
   } else {
     errorEmail.style.display = "none";
   }
 
   if (!passwordLogIn.value) {
     errorPassword.style.display = "block";
+    alertError.style.display = "none";
   } else {
     errorPassword.style.display = "none";
   }

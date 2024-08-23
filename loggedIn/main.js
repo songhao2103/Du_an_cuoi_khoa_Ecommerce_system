@@ -14,7 +14,7 @@ accountUser.addEventListener("click", function () {
   }
 });
 
-// code cho phần hiển thị số sản phẩm đã thêm vào giỏ hàng
+
 
 // =====introduce media=========
 
@@ -104,6 +104,7 @@ rightSales.addEventListener("click", function () {
 });
 
 btnSales.addEventListener("click", function () {
+  listProducts.style.transform = `translateX(0px)`;
   listProducts.classList.toggle("view_all");
   btnSales.classList.toggle("clicked");
   document.querySelector(".flash_sales .arrow").classList.toggle("none");
