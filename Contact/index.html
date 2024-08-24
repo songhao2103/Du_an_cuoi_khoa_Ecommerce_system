@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- ==reset== -->
     <link rel="stylesheet" href="../HomePage/reset.css" />
     <!-- ==font Poppins=== -->
@@ -25,10 +27,10 @@
     />
     <!-- css style== -->
     <link rel="stylesheet" href="./style.css" />
-    <title>Dự án cuối khóa_Sign Up</title>
+    <title>Dự án cuối khóa_Contact</title>
   </head>
   <body>
-    <!-- ==============header start==================-->
+    <!-- ==================header============ -->
     <header class="header">
       <!-- ==========top========== -->
       <div class="top">
@@ -43,9 +45,11 @@
         <nav class="nav">
           <p class="logo desc">Exclusive</p>
           <ul class="list">
-            <li class="item desc"><a href="../HomePage/index.html">Home</a></li>
-            <li class="item desc"><a href="">Contact</a></li>
-            <li class="item desc"><a href="">About</a></li>
+            <li class="item desc"><a href="../loggedIn/index.html">Home</a></li>
+            <li class="nav_contact item desc"><a href="">Contact</a></li>
+            <li class="nav_about item desc">
+              <a href="../About/index.html">About</a>
+            </li>
             <li class="item desc">
               <a href="../sign_up/index.htm">Sign Up</a>
             </li>
@@ -61,104 +65,117 @@
               </button>
             </div>
             <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
-            <a href="../LogIn/index.html" class="cart"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            <div id="media_cart" class="media_cart">
+              <p
+                id="quantity_products_cart"
+                class="quantity_products_cart desc"
+              >
+                0
+              </p>
+              <a href="../Cart/index.html" class="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+            <div id="account_user" class="account_user">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <ul id="options_acc" class="options_acc">
+              <li id="acccount_logged_in"></li>
+              <li class="item item1">
+                <div class="icon"><i class="fa-regular fa-user"></i></div>
+                <a href="../Account/index.html" class="desc"
+                  >Manage My Account</a
+                >
+              </li>
+              <li class="item item2">
+                <div class="icon">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <a class="desc">My Order</a>
+              </li>
+              <li class="item item3">
+                <div class="icon">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <a class="desc">My Cancellations</a>
+              </li>
+              <li class="item item4">
+                <div class="icon"><i class="fa-regular fa-star"></i></div>
+                <a class="desc">My Reviews</a>
+              </li>
+              <li class="item item5">
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <a href="../LogIn/index.html" class="desc">Logout</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
     </header>
-    <!-- ==============header end==================-->
 
-    <!-- ==============main start================= -->
+    <!-- ==============main====================== -->
     <main class="main">
       <div class="main_content">
-        <!-- media start -->
-        <div class="main_content_sign_up">
-          <div class="media">
-            <img
-              src="../img/img_PNG/img_media_sign_up.png"
-              alt=""
-              class="img_media"
-            />
+        <div class="content">
+          <!-- ========bar============ -->
+          <div class="bar">
+            <a href="../loggedIn/index.html"><pre class="desc">Home  /</pre></a>
+            <span class="desc">Contact</span>
           </div>
-          <!-- media end -->
 
-          <!-- sign up start -->
-          <div class="sign_up">
-            <p class="desc title">Create an account</p>
-            <p class="desc">Enter your details below</p>
+          <!-- ============body main============ -->
+          <div class="body_main">
+            <div class="box_contact">
+              <div class="contact call">
+                <div class="box_title">
+                  <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                  <p class="desc title">Call to us</p>
+                </div>
+                <p class="desc">We are available 24/7, 7 days a week.</p>
+                <p class="desc">Phone: +8801611112222</p>
+              </div>
 
-            <form id="form_sign_up" action="">
-              <div class="box">
-                <input
-                  id="user_name"
-                  type="text"
-                  placeholder="Name"
-                  autocomplete="off"
-                />
-                <label class="desc error user_name_error"
-                  >Name không được để trống</label
-                >
-              </div>
-              <div class="box">
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="Email or Phone Number"
-                />
-                <label class="desc error email_error"></label>
-              </div>
-              <div class="box">
-                <input
-                  id="password"
-                  type="password"
-                  placeholder="Password"
-                  autocomplete="off"
-                />
-                <label class="desc error password_error"></label>
-                <div class="icon icon_password">
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-eye-slash"></i>
+              <div class="contact write">
+                <div class="box_title">
+                  <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                  <p class="desc title">Write To US</p>
                 </div>
+                <p class="desc">
+                  Fill out our form and we will contact you within 24 hours.
+                </p>
+                <p class="desc">Emails: customer@exclusive.com</p>
+                <p class="desc">Emails: support@exclusive.com</p>
               </div>
-              <div class="box">
-                <input
-                  id="repassword"
-                  type="password"
-                  autocomplete="off"
-                  placeholder="Re-enter Password"
-                />
-                <label class="desc error repassword_error"> </label>
-                <div class="icon icon_repassword">
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-eye-slash"></i>
+            </div>
+
+            <div class="feedback">
+              <form action="">
+                <div class="info">
+                  <input type="text" placeholder="Your Name" /><input
+                    type="text"
+                    placeholder="Your Email"
+                  /><input type="text" placeholder="Your Phone" />
                 </div>
-              </div>
-              <button type="submit" class="desc">Create Account</button>
-              <button class="google">
-                <img
-                  src="../img/img_PNG/logo_google_sign_up.svg"
-                  alt=""
-                  class="logo_google"
-                />
-                <p class="desc">Sign up with Google</p>
-              </button>
-            </form>
-            <p class="desc">
-              Already have account?<a
-                href="../LogIn/index.html"
-                class="log_in desc"
-                >Log In</a
-              >
-            </p>
+                <div class="massage">
+                  <textarea
+                    name="Massage"
+                    id=""
+                    rows="13"
+                    cols="94"
+                    placeholder="Your Massage"
+                  ></textarea>
+                </div>
+                <button class="btn send desc">Send Massage</button>
+              </form>
+            </div>
           </div>
         </div>
-        <!-- sign up end -->
       </div>
     </main>
 
-    <!-- =======footer========= -->
+    <!-- ===================footer=============== -->
     <footer class="footer">
       <div class="main_content">
         <div class="content">
@@ -178,8 +195,8 @@
           <div class="item item2">
             <p class="desc title">Support</p>
             <pre class="desc">
-111 Bijoy sarani, Dhaka,
-DH 1515, Bangladesh.</pre
+  111 Bijoy sarani, Dhaka,
+  DH 1515, Bangladesh.</pre
             >
             <p class="desc">exclusive@gmail.com</p>
             <p class="desc">+88015-88888-9999</p>
@@ -221,8 +238,5 @@ DH 1515, Bangladesh.</pre
         </div>
       </div>
     </footer>
-    <!-- JS -->
-    <script src="./main.js"></script>
-    <!-- ==============main end================= -->
   </body>
 </html>
